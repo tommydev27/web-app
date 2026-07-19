@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="pwKvYalfLxSFwpDlCsan4yS_mEsUdJvUDrI2wKiIHXk" />
+    <meta property="og:title" content="tommy web app-tools">
+    <meta property="og:description" content="Avatar guard fb • Downlader vidio • Create id card • Unicode teks • Teks Generator">
+    <meta property="og:image" content="https://i.postimg.cc/m2Drr04W/20260508-125728.jpg">
+    <meta property="og:image:type" content="image/jpeg"> <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://tommydev27.github.io/com.extensions/">
+    <meta property="og:type" content="website">
+    <meta property="fb:app_id" content="1245016886587008">
+    <title>Tommy Website</title>
+    <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y2/l/0,cross/nC2XYYUISfm.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v5/y8/l/0,cross/Z39OoPuXzgz.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FK1EY26W82"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-FK1EY26W82');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lobster&family=Bebas+Neue&family=Caveat&family=Shrikhand&family=Graduate&family=Sigmar&display=swap" rel="stylesheet">
+  <head>
+<style>
+/* =========================================
+   1. GLOBAL & RESET
+========================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  -webkit-user-select: none;
+  font-family: sans-serif;
+  color: #333;
+  padding: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #181818;
+  color: #00e2f0;
+}
+
+/* =========================================
+   2. TYPOGRAPHY & UTILITIES
+========================================= */
+.bold {
+  font-family: Orbitron, monospace;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.bold1 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.tommydev {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-top: 20px;
+  color: #3d495b;
+}
+
+body.dark-mode .tommydev {
+  color: #00e2f0;
+}
+
+.profile-description {
+  font-size: 10px;
+  color: gray;
+  margin-top: 0;
+}
+
+body.dark-mode .profile-description {
+  color: #aaa;
+}
+
+/* =========================================
+   4. MENU GRID & ITEM (Umum)
+========================================= */
+.menu-grid {
+  border-radius: 15px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+body.dark-mode .menu-grid {
+  background: #181818;
+  border-color: #444;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding-right: 32px;
+  position: relative;
+}
+
+body.dark-mode .menu-item {
+  border-color: #444;
+}
+
+.menu-item .icon {
+  font-size: 20px;
+  margin-bottom: 8px;
+  display: block;
+  color: #64748b;
+}
+
+body.dark-mode .menu-item .icon {
+  color: #aaa;
+}
+
+.menu-item .label {
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: #334155;
+}
+
+body.dark-mode .menu-item .label {
+  color: #00e2f0;
+}
+
+.menu-item::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8px;
+  font-size: 10px;
+  font-weight: bold;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* =========================================
+   5. MENU CONTAINER 3 (Card Style - ID Card Editor)
+========================================= */
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  padding: 4px; /* Tambahan padding untuk efek dua garis */
+  gap: 6px; /* Jarak antar item */
+}
+
+body.dark-mode .menu-container {
+  background: #181818;
+  border-color: #444;
+}
+
+.menu-item3 {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #ccc; /* Berubah jadi garis kotak utuh */
+  border-radius: 12px; /* Menambahkan lengkungan */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+body.dark-mode .menu-item3 {
+  border-color: #444; /* Menyesuaikan mode gelap */
+}
+
+.menu-item3:hover {
+  background-color: #f8fafc;
+}
+
+body.dark-mode .menu-item3:hover {
+  background-color: #2a2a2a;
+}
+
+.icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+body.dark-mode .icon-circle {
+  background: linear-gradient(135deg, #202020 0%, #404040 10%, #202020 80%);
+  box-shadow: inset 6px 6px 12px #262d38, inset -6px -6px 12px #4a596e;
+}
+
+.icon-inner {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-inner i {
+  color: #4a596e;
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
+body.dark-mode .icon-inner i {
+  color: #aaa;
+}
+
+.card-header {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #334155;
+}
+
+body.dark-mode .card-title {
+  color: #00e2f0;
+}
+
+.card-body {
+  display: none;
+}
+
+/* =========================================
+   6. MENU LIST 15 (List Style - Bagian Atas)
+========================================= */
+.menu-list15 {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 4px; /* Tambahan padding untuk efek dua garis */
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Jarak antar item */
+}
+
+body.dark-mode .menu-list15 {
+  border-color: #444;
+}
+
+.menu-item15 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #334155;
+  border: 1px solid #ccc; /* Berubah jadi garis kotak utuh */
+  border-radius: 12px; /* Menambahkan lengkungan */
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+body.dark-mode .menu-item15 {
+  color: #00e2f0;
+  border-color: #444; /* Menyesuaikan mode gelap */
+}
+
+.menu-item15:hover {
+  background-color: #f8fafc;
+}
+
+body.dark-mode .menu-item15:hover {
+  background-color: #2a2a2a;
+}
+
+.icon-box15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  color: #64748b;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+body.dark-mode .icon-box15 {
+  color: #aaa;
+}
+
+.label-box15 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.connector-line15 {
+  display: none;
+}
+
+/* =========================================
+   SATUKAN SEMUA EFEK KLIK & BLOKIR SOROTAN
+========================================= */
+.menu-item, 
+.menu-item3, 
+.menu-item15, 
+.nav-button, 
+.btn-salin, 
+.theme-btn, 
+#menuBtn,
+#sideMenu a {
+  -webkit-tap-highlight-color: transparent !important;
+  /* Hapus outline bawaan browser saat diklik */
+  outline: none !important; 
+}
+
+/* Efek klik seragam (mengecil 0.80) */
+.menu-item:active, 
+.menu-item3:active, 
+.menu-item15:active, 
+.nav-button:active, 
+.btn-salin:active, 
+.theme-btn:active, 
+#menuBtn:active,
+#sideMenu a:active {
+  transform: scale(0.80) !important;
+  transition: transform 0.1s ease !important;
+}
+
+/* Warna saat tombol diklik (Mode Terang) */
+.menu-item:active, 
+.menu-item3:active, 
+.menu-item15:active, 
+.nav-button:active, 
+.btn-salin:active, 
+#sideMenu a:active {
+  background-color: rgba(150, 228, 255, 0.5) !important;
+}
+
+/* Warna saat tombol diklik (Mode Gelap) */
+body.dark-mode .menu-item:active, 
+body.dark-mode .menu-item3:active, 
+body.dark-mode .menu-item15:active, 
+body.dark-mode .nav-button:active, 
+body.dark-mode .btn-salin:active,
+body.dark-mode #sideMenu a:active {
+  background-color: rgba(0, 226, 240, 0.2) !important;
+}
+
+/* =========================================
+   7. STATUS BAR
+========================================= */
+.status-bar2 {
+  display: flex;
+  padding: 1vw 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 9999;
+}
+
+.status-dot2 {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background: rgb(0,124,17);
+  box-shadow: 0 0 3px #00ff88;
+  animation: pulse-dot 5s ease-in-out infinite;
+  vertical-align: middle;
+}
+
+.status-text2 {
+  font-size: 10px;
+  letter-spacing: 2vw;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.status-id2 {
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(0.9); }
+}
+
+/* =========================================
+   8. HEADER, SIDE MENU & OVERLAY
+========================================= */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.theme-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #64748b;
+  background: none;
+  transition: transform 0.1s ease;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.theme-btn:active {
+  transform: scale(0.7);
+}
+
+body.dark-mode .theme-btn {
+  color: yellow;
+}
+
+#menuBtn {
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+#menuBtn:active {
+  animation: pulseClick 0.25s ease;
+}
+
+@keyframes pulseClick {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.7); }
+  100% { transform: scale(1); }
+}
+
+#sideMenu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: #fff;
+  z-index: 999999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: left .4s ease;
+  padding: 25px 15px;
+}
+
+#sideMenu.active {
+  left: 0;
+}
+
+body.dark-mode #sideMenu {
+  background: #181818;
+}
+
+#sideMenu h3 {
+  margin: 10px 0 25px;
+  padding-left: 10px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#sideMenu a {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  color: #222;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+#sideMenu a:hover {
+  background: rgba(0,0,0,.06);
+}
+
+body.dark-mode #sideMenu h3,
+body.dark-mode #sideMenu a {
+  color: #bbb;
+}
+
+body.dark-mode #sideMenu a:hover {
+  background: rgba(255,255,255,.1);
+}
+
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 1000;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========================================
+   9. IFRAME & ANIMASI
+========================================= */
+#container-tutorial {
+  display: none;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#container-tutorial.buka { animation: slideDown 0.4s ease-out forwards; }
+#container-tutorial.tutup { animation: slideUp 0.4s ease-in forwards; }
+
+#iframeView15 {
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+#iframeView15.buka { animation: slideDown 0.4s ease-out forwards; }
+#iframeView15.tutup { animation: slideUp 0.4s ease-in forwards; }
+#iframeView15.iframe-stories.buka { animation: slideDownStories 0.4s ease-out forwards; }
+#iframeView15.iframe-stories.tutup { animation: slideUpStories 0.4s ease-in forwards; }
+#iframeView15.iframe-stories #target-frame15 { height: 65vh !important; }
+
+#target-frame15 {
+  width: 100%;
+  height: 52vh;
+  border-radius: 3vw;
+  border: none;
+  display: block;
+}
+
+#wrapper-frame {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+#wrapper-frame.buka { max-height: 395px !important; opacity: 1 !important; }
+#wrapper-frame.tutup { max-height: 0 !important; opacity: 0 !important; }
+
+#konten-frame {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  border: none;
+}
+
+.responsive-iframe {
+  width: 100%;
+  aspect-ratio: 5 / 5;
+  height: auto;
+  border-radius: 8px;
+}
+
+.iframe-stories {
+  height: 64vh;
+  border-radius: 3vw;
+}
+
+.iframe-stories iframe, 
+.iframe-stories [name="target-frame15"] {
+  height: 100% !important;
+}
+
+@keyframes slideDown { 
+  from { max-height: 0; opacity: 0; } 
+  to { max-height: 56vh; opacity: 1; } 
+}
+@keyframes slideUp { 
+  from { max-height: 56vh; opacity: 1; } 
+  to { max-height: 0; opacity: 0; } 
+}
+@keyframes slideDownStories { 
+  from { max-height: 0; opacity: 0; } 
+  to { max-height: 65vh; opacity: 1; } 
+}
+@keyframes slideUpStories { 
+  from { max-height: 65vh; opacity: 1; } 
+  to { max-height: 0; opacity: 0; } 
+}
+
+/* =========================================
+   10. CARDS (CARD 1) & TOMBOL SALIN
+========================================= */
+.card {
+  padding: 1vw 0vw;
+}
+
+.card1 {
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 1.7%;
+  flex-shrink: 0;
+}
+
+body.dark-mode .card1 {
+  background: linear-gradient(135deg, #202020 0%, #404040 10%, #202020 80%) !important;
+  box-shadow: inset 6px 6px 12px #262d38, inset -6px -6px 12px #4a596e !important;
+  border-color: #444;
+}
+
+.icon-box {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-bottom: 25px;
+  color: #64748b;
+}
+
+body.dark-mode .icon-box {
+  color: #aaa;
+}
+
+.unicode {
+  font-size: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #64748b;
+}
+
+body.dark-mode .unicode {
+  color: #aaa;
+}
+
+.btn-salin {
+  border: none;
+  border-radius: 3vw;
+  padding: 8px 0;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.1s ease, opacity 0.1s ease;
+  border: 1px solid #ccc;
+  color: #64748b;
+}
+
+body.dark-mode .btn-salin {
+  background: #333;
+  border-color: #444;
+  color: #00e2f0;
+}
+
+.btn-salin:active {
+  transform: scale(0.95);
+  opacity: 0.7;
+}
+
+/* =========================================
+   11. NAVIGASI BUTTONS (Diperbarui Solid, Ikon & Warna)
+========================================= */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 0;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #f1f5f9;
+  color: #334155;
+  transition: transform 0.1s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.nav-button:hover {
+  background-color: #e2e8f0;
+}
+
+.nav-button:active {
+  transform: scale(0.95);
+  background-color: rgba(150, 228, 255, 0.3);
+  box-shadow: 0px 1px 2px rgba(156, 156, 156, 0.4);
+}
+
+.nav-button i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.nav-button span {
+  font-size: 15px;
+  font-weight: bold;
+  color: inherit;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* --- DARK MODE UNTUK NAV BUTTONS --- */
+body.dark-mode .nav-button {
+  background-color: #222222;
+  border: 1px solid #444444;
+  color: #00e2f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .nav-button:hover {
+  background-color: #333333;
+}
+
+body.dark-mode .nav-button:active {
+  background-color: rgba(0, 226, 240, 0.2);
+}
+</style>
+
+<body>
+<div class="container">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<div class="header-wrapper">
+  <span class="bold">
+    TOMMY WEB-APP
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+      alt="Verified Badge"
+      width="20"
+      height="20"
+      style="position:relative; top:3px;color">
+  </span>
+  <div style="display:flex;align-items:center;gap:30px;">
+    <button class="theme-btn" id="toggleBtn">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <button id="menuBtn">☰</button>
+  </div>
+</div>
+
+<div id="overlay"></div>
+
+<div id="sideMenu">
+  <a style="color:#008bdd;font-size:20px;"><b>Keterangan:</b></a>
+
+  <a style="font-weight:500;">
+    Tools adalah kumpulan alat sederhana. Tersedia dalam bentuk file ZIP untuk diunduh, dan sebagian lainnya dapat langsung digunakan melalui antarmuka website tanpa perlu mengunduh apa pun.
+  </a>
+
+  <a><b>Tools yang tersedia</b></a>
+
+  <a>
+    Avatar Guard FB untuk membantu pengguna melindungi foto profil dari tangkapan layar (screenshot) dan penyalahgunaan oleh pihak lain.
+    <br><br>
+
+    Pembuat ID Card dan kartu identitas media sosial, serta alat bantu untuk proses banding akun.
+    <br><br>
+
+    Generator Unicode Text untuk membuat berbagai variasi teks unik.
+    <br><br>
+
+    Code Runner untuk mencari font, ikon, emoji, dan berbagai kelompok karakter khusus.
+    <br><br>
+
+    Multi Keyboard memungkinkan pengguna merangkai karakter unik menggunakan kombinasi teks, simbol, emoji, dan karakter lainnya.
+    <br><br>
+
+    Penghitung Karakter memungkinkan pengguna menghitung jumlah karakter, menggandakan teks, menghapus karakter duplikat, dan fitur pendukung lainnya.
+    <br><br>
+
+    Glitch Text digunakan untuk membuat teks bergaris dan berbagai efek teks unik lainnya. Untuk fitur yang lebih lengkap, silakan kunjungi halaman utama website.
+  </a>
+
+  <a style="font-size:10px;color:#cea800;">
+    Tools by Tommy | v0.2.7
+  </a>
+</div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    toggleBtn.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+    <div class="status-bar2">
+    <div style="display: flex; align-items: center;">
+      <span class="status-text2">SERVER ONLINE</span>
+      <span class="status-dot2"></span>
+    </div>
+    <span class="status-id2">MULTI TOOLS </span>
+  </div>
+
+<!-- BUNGKUS DENGAN CLASS INI -->
+    <style>
+        /* Variabel Warna */
+        .nexus-scope {
+
+            --bg-deep: #0a1424;
+            --ink: #333;
+            --ink-dim: #333;
+            --cyan: #00b3d5;
+            --cyan-soft: #4f8dfd;
+            --violet: #8a6bff;
+        }
+
+        /* Reset hanya berlaku di dalam .nexus-scope */
+        .nexus-scope, .nexus-scope * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        .nexus-scope { 
+            height: 125px; 
+            color: var(--ink); 
+            font-family: 'Rajdhani', sans-serif; 
+            overflow: hidden; 
+            position: relative; 
+        }
+
+        /* BOOT / LOADER SCREEN */
+.nexus-scope #boot {
+    position: absolute; inset: 0; z-index: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    transition: opacity .9s ease, filter .9s ease;
+}
+        
+        .nexus-scope #boot.hide { opacity: 0; filter: blur(6px); pointer-events: none; }
+        
+        .nexus-scope #boot::before { 
+            content: ""; position: absolute; inset: 0; 
+            border-radius: 10px;
+            mix-blend-mode: overlay; pointer-events: none; 
+        }
+
+        /* ORBIT LOGO */
+        .nexus-scope .boot-inner { position: relative; display: flex; flex-direction: column; align-items: center; gap: 34px; margin-top: 0px; }
+        .nexus-scope .orbit-wrap { position: relative; width: 130px; height: 130px; display: flex; align-items: center; justify-content: center; }
+        .nexus-scope .orbit-ring { position: absolute; inset: 0; animation: spin 12s linear infinite; }
+        .nexus-scope .orbit-ring.rev { animation-direction: reverse; animation-duration: 11s; opacity: .55; }
+        
+        .nexus-scope .glyph { 
+            position: absolute; width: 20px; height: 20px; 
+            border: none; 
+        }
+        
+        .nexus-scope .g1 { top: 16px; left: 50%; transform: translateX(-50%); }
+        .nexus-scope .g2 { right: 16px; top: 50%; transform: translateY(-50%); }
+        .nexus-scope .g3 { bottom: 16px; left: 50%; transform: translateX(-50%); }
+        .nexus-scope .g4 { left: 16px; top: 50%; transform: translateY(-50%); }
+        
+
+
+/* Penyesuaian teks agar rapi di dalam area 130px */
+.nexus-scope .core h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #888;
+    letter-spacing: 8px;
+    margin: 0 0 4px 0;
+}
+
+.nexus-scope .core h4 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 12px;
+    color: #333; 
+    text-align: center;
+    letter-spacing: 8px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+/* Bagian bawah ini tetap mengikuti kode aslimu */
+.nexus-scope .brand { font-family: 'Orbitron', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 9px; color: var(--ink); text-shadow: 0 0 14px var(--cyan-soft); }
+.nexus-scope .brand span { color: var(--cyan); }
+
+.nexus-scope #app {
+    opacity: 0;
+    transition: opacity 0.9s ease;
+}
+.nexus-scope #app.visible {
+    opacity: 1;
+}
+
+
+
+        .nexus-scope .content-row {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            gap: 0px;
+            transition: gap 0.9s ease;
+        }
+        .nexus-scope .content-row.shifted {
+            gap: 8px;
+        }
+
+        .nexus-scope .logo-wrapper27 {
+            width: 115px;
+            height: 115px;
+            align-content:left;align-items:left;
+            flex-shrink: 0;
+            transition: width 0.9s ease, height 0.9s ease;
+            border:3px solid #d1d1d1; border-radius: 50%; 
+        }
+        .nexus-scope .logo-wrapper27.shrink {
+            width: 100px;
+            height: 100px;
+        }
+        .nexus-scope .logo-wrapper27 svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .nexus-scope .typed-wrap {
+            text-align: left;
+            width: 0;
+            overflow: hidden;
+            opacity: 0;
+            flex-shrink: 0;
+            white-space: normal;
+            transition: width 0.9s ease, opacity 0.7s ease;
+        }
+        .nexus-scope .typed-wrap.show {
+            width: 100%;
+            max-width: 225px;
+            opacity: 1;
+        }
+        
+        .nexus-scope .typed-text {
+            font-family: 'normal', sans-serif;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        .nexus-scope .typed-text {
+            overflow-y: auto;
+        }
+
+        .nexus-scope .typed-cursor {
+            display: inline-block;
+            border-radius: 50%;
+            width: 1em;
+            height: 1em;
+            background: var(--cyan-soft);
+            margin-left: 2px;
+            vertical-align: -0.15em;
+            animation: blink 0.85s steps(1) infinite;
+        }
+
+        /* Keyframes */
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+        
+        .logo-wrapper27 {
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes slideLoop {
+    0% { transform: translateX(400px); }
+    100% { transform: translateX( 3%); }
+}
+    </style>
+<div class="container27">
+<div class="nexus-scope">
+    <div id="boot">
+        <div class="boot-inner">
+            <div class="orbit-wrap">
+                <div class="orbit-ring">
+                    <svg class="glyph g1" viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 20 L3 20 Z" stroke="var(--cyan)" stroke-width="2" stroke-linejoin="round"/></svg>
+                    <svg class="glyph g2" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--violet)" stroke-width="2"/></svg>
+                    <svg class="glyph g3" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" stroke="var(--cyan)" stroke-width="2"/></svg>
+                    <svg class="glyph g4" viewBox="0 0 24 24" fill="none"><path d="M6 6 L18 18 M18 6 L6 18" stroke="var(--violet)" stroke-width="2" stroke-linecap="round"/></svg>
+                </div>
+                <div class="orbit-ring rev">
+                    <svg class="glyph g1" viewBox="0 0 24 24" fill="none"><rect x="5" y="5" width="14" height="14" stroke="rgba(220,232,245,0.4)" stroke-width="1.5"/></svg>
+                    <svg class="glyph g3" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" stroke="rgba(220,232,245,0.4)" stroke-width="1.5"/></svg>
+                </div>
+                
+                <div class="core">
+<div id="coreWelcome" style="transition: transform 0.8s ease, opacity 0.8s ease;">
+        <h2>WELCOME</h2>
+        <h4>TOMMY WEBSITE TOOLS</h4>
+    </div>
+            </div>
+<div id="coreName" style="position: absolute; top: 45%; left: 0; width: 100%; margin-top: -25px; transform: translateX(100%); opacity: 0;">
+    <h2 style="font-family: 'Orbitron', sans-serif; font-size: 30px; font-weight: 900; color: #333; margin: 0 0 4px 0; letter-spacing: 1px; white-space: nowrap;">TOMMY2788</h2>
+   <h4 style="font-family: 'Rajdhani', sans-serif; font-size: 11px; color: #888; letter-spacing: 7px; text-align: center; margin: 0; white-space: nowrap;font-family: 'Orbitron', sans-serif;">WEB DEVELOPMENT</h4>
+</div>
+          </div>
+        </div>
+    </div>
+    <div id="app" style="width:100%; ">
+        <div class="content-row" id="contentRow">
+            <div class="logo-wrapper27" id="logoWrap">
+                <svg viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <clipPath id="circle-clip277">
+                      <circle cx="130" cy="130" r="120"/>
+                    </clipPath>
+
+                    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
+                    </filter>
+                  </defs>
+
+                  <image 
+                    href="https://i.postimg.cc/fLd2JFtC/1780074024820.jpg"
+                    x="0"
+                    y="0"
+                    width="260"
+                    height="260"
+                    preserveAspectRatio="xMidYMid slice"
+                    clip-path="url(#circle-clip277)"
+                  />
+
+                  <g transform="translate(130 190) scale(0.32)" filter="url(#shadow)">
+                    <path d="M0 -58 C18 -45 38 -37 58 -35 L58 8 C58 46 32 76 0 96 C-32 76 -58 46 -58 8 L-58 -35 C-38 -37 -18 -45 0 -58 Z"
+                      fill="none"
+                      stroke="#ffffff"
+                      stroke-width="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+
+                    <path d="M0 -40 C12 -30 25 -24 40 -22 L40 6 C40 30 22 52 0 66 C-22 52 -40 30 -40 6 L-40 -22 C-25 -24 -12 -30 0 -40 Z"
+                      fill="#ffffff"/>
+                  </g>
+                </svg>
+            </div>
+
+            <div class="typed-wrap" id="typedWrap">
+                <div class="typed-text" id="typedText"><span class="typed-cursor" id="typedCursor"></span></div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    (function(){
+        const container = document.querySelector('.nexus-scope');
+        const boot = container.querySelector('#boot');
+        const app = container.querySelector('#app');
+        const contentRow = container.querySelector('#contentRow');
+        const logoWrap = container.querySelector('#logoWrap');
+        const typedWrap = container.querySelector('#typedWrap');
+        const typedText = container.querySelector('#typedText');
+        const typedCursor = container.querySelector('#typedCursor');
+
+if (!document.querySelector("link[href*='Orbitron']")) {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+}
+
+if (!document.querySelector("link[href*='Orbitron']")) {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+}
+
+if (!document.querySelector("link[href*='Orbitron']")) {
+    const link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+}
+
+const welcomeHeader = `
+    <div id="fixed-header-content" style="position: fixed; top: 95px; right: 10px; z-index: 99999; background: #64748b; color: #fff; padding: 6px 20px; font-weight: bold; font-size: 12px; display: flex; justify-content: space-between; align-items: center; border-radius: 0 50px 0 50px; width: 250px; box-sizing: border-box;">
+        <span>Sistem Panduan</span>
+        <span id="header-close" style="cursor: pointer; font-size: 18px; margin-left: 10px;">&times;</span>
+    </div>
+`;
+
+const part1 = "Download file ext-zip terlebih dahulu. selanjutnya buka browser Extensions Kiwi / Lemur.Pilih menu ⫶ aktifkan Mode developer & desktop. lalu klik bagian extensions, Ekstrak file yang sudah di download bernama (tools-data-tm-main) Atau simak TUTORIAL Check fitur klik di tombol bawah.";
+const part2 = "Bagian tools lainya cukup gunakan langsung dari antar muka tampa login Web hanya alat bantu aman tampa menyimpan login data ";
+
+const chatToggleBtn = document.createElement('button');
+chatToggleBtn.innerHTML = '+';
+chatToggleBtn.style.cssText = "position: fixed; top: 400px; right: 10px; font-weight:bold;width: 50px; height: 50px; border-radius: 50%; background: #01bfe7;  -webkit-tap-highlight-color: transparent; color:#293437; border: none; font-size: 20px; z-index: 2147483647; cursor: pointer; opacity: 0.5; display: none; align-items: center; justify-content: center; box-shadow: 0 1px 1px rgba(0,0,0,0.498); transition: opacity 0.3s ease;";
+chatToggleBtn.onmouseover = () => chatToggleBtn.style.opacity = '1';
+chatToggleBtn.onmouseout = () => chatToggleBtn.style.opacity = '0.5';
+document.body.appendChild(chatToggleBtn);
+
+chatToggleBtn.onclick = () => {
+    chatToggleBtn.style.display = 'none';
+    typedText.style.display = 'inline-block';
+    const header = document.getElementById('header-wrapper');
+    if(header) header.style.display = 'block';
+};
+
+window.addEventListener('scroll', () => {
+    if (typedText && typedText.style.display !== 'none' && typedText.style.display !== '') {
+        typedText.style.display = 'none';
+        const header = document.getElementById('header-wrapper');
+        if(header) header.style.display = 'none';
+        chatToggleBtn.style.display = 'flex';
+    }
+});
+
+const typeText = () => {
+    const speed = 20;
+    typedText.innerHTML = '';
+    typedText.style.cssText = "position: fixed; top: 130px; right: 10px; z-index: 99998; background: #fff; padding: 0; border-radius: 20px 0 20px 20px; border: 1px solid #ccc; width: 100%; max-width: 250px; max-height: 282px; overflow-y: auto; color: #333; box-shadow: 0 4px 10px rgba(0,0,0,0.2);";
+    const headerWrapper = document.createElement('div');
+    headerWrapper.id = 'header-wrapper';
+    headerWrapper.innerHTML = welcomeHeader;
+    document.body.appendChild(headerWrapper);
+const hideWidget = () => {
+    typedText.style.display = 'none';
+    headerWrapper.style.display = 'none';
+    chatToggleBtn.style.display = 'flex';
+    chatToggleBtn.style.opacity = '0.5';
+};
+    document.getElementById('header-close').onclick = () => {
+        clearTimeout(autoHideTimer);
+        hideWidget();
+    };
+    const messageBox = document.createElement('div');
+    messageBox.style.cssText = "padding: 15px; position: relative; padding-bottom: 40px;";
+    typedText.appendChild(messageBox);
+    const textContainer = document.createElement('div');
+    messageBox.appendChild(textContainer);
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML = '➤';
+    nextBtn.style.cssText = "position: absolute; bottom: 10px; right: 15px; background: #64748b; color: #fff; border: none; border-radius: 50%; width: 30px; height: 30px; cursor: pointer; display: none; font-size: 16px; align-items: center; justify-content: center;";
+    messageBox.appendChild(nextBtn);
+    let autoHideTimer = null;
+    const runTyping = (text, target, callback) => {
+        let i = 0;
+        const cursor = document.createElement('span');
+        cursor.innerHTML = '|';
+        target.appendChild(cursor);
+        const interval = setInterval(() => {
+            if (i < text.length) {
+                cursor.insertAdjacentText('beforebegin', text.charAt(i));
+                typedText.scrollTop = typedText.scrollHeight;
+                i++;
+            } else {
+                clearInterval(interval);
+                cursor.remove();
+                if (callback) callback();
+            }
+        }, speed);
+    };
+    typedText.style.display = 'inline-block';
+runTyping(part1, textContainer, () => {
+    nextBtn.style.display = 'flex';
+    autoHideTimer = setTimeout(() => {
+        hideWidget();
+        setTimeout(() => {
+            const coreWelcome = container.querySelector('#coreWelcome');
+            const coreName = container.querySelector('#coreName');
+            if (coreWelcome) {
+                coreWelcome.style.transform = 'translateX(-100%)';
+                coreWelcome.style.opacity = '0';
+            }
+            if (coreName) {
+                coreName.style.opacity = '1';
+                coreName.style.animation = 'slideLoop 2s linear 1 forwards';
+            }
+        }, 10);
+    }, 5000);
+});
+
+nextBtn.onclick = () => {
+    clearTimeout(autoHideTimer);
+    nextBtn.style.display = 'none';
+    const newPara = document.createElement('p');
+    newPara.style.margin = "10px 0 0 0";
+    textContainer.appendChild(newPara);
+    runTyping(part2, newPara, () => {
+        setTimeout(() => {
+            if (typedText.style.display !== 'none') {
+                hideWidget();
+            }
+            setTimeout(() => {
+                const coreWelcome = container.querySelector('#coreWelcome');
+                const coreName = container.querySelector('#coreName');
+                if (coreWelcome) {
+                    coreWelcome.style.transform = 'translateX(-100%)';
+                    coreWelcome.style.opacity = '0';
+                }
+                if (coreName) {
+                    coreName.style.opacity = '1';
+                    coreName.style.animation = 'slideLoop 2s linear 1 forwards';
+                }
+            }, 5000);
+        }, 5000);
+    });
+};
+};
+
+const shiftAndType = () => {
+    boot.classList.add('hide');
+    contentRow.classList.add('shifted');
+    logoWrap.classList.add('shrink');
+    typedWrap.classList.add('show');
+    setTimeout(() => {
+        typeText();
+    }, 2000);
+};
+
+const hideBoot = () => {
+    boot.classList.add('hide');
+    const delayTeks = 500;
+    setTimeout(() => {
+        app.classList.add('visible');
+        boot.style.opacity = '0.3';
+        boot.style.filter = 'none';
+        boot.style.zIndex = '0';
+        boot.style.pointerEvents = 'none';
+        setTimeout(shiftAndType, 500);
+    }, delayTeks);
+    // boot.remove() DIHAPUS supaya orbit + coreName tetap bisa tampil
+};
+
+setTimeout(hideBoot, 2000);
+boot.addEventListener('click', hideBoot);
+})();
+</script>
+</div>
+
+
+<div class="text-container27">
+  <!-- Flex-direction column membuat elemen tersusun ke bawah -->
+  <div class="tommydev" style="display: flex; flex-direction: column; gap: 10px; font-size:16px;">
+    <!-- Bagian atas: Icon dan Text -->
+    <div style="display: flex; align-items: center; gap: 5px;">
+      <div class="shield-icon" style="width: 14.5px; height: 17px; fill:  #334155;">
+        <svg viewBox="0 0 21 29"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.47 4.14-3.13 7.85-7 9.01v-9.01H5V6.3l7-3.11v8.8z"></path></svg>
+      </div>
+      <span>Avatar Guard &nbsp;</span>
+
+    <div style="display: flex; align-items: center; gap: 5px;">
+      <i class="fab fa-facebook" style="color: #334155; font-size:16px;"></i>
+      <span>Change name </span>
+    </div>
+  </div>    
+    </div>
+        <img src="https://i.postimg.cc/W4rS7b2Q/20260719-075825.jpg" style="width: 100%; border: none;  border-radius: 8px; pointer-events: none; margin-top: 10px; margin-bottom: 5px;
+        box-shadow: 0px 2px 10px rgba(82,82,82,0.3); "></img>
+    </div>
+<button type="button" class="nav-button" onclick="window.location.href=''">
+    <span>Download ZIP</span>
+</button>
+</button>
+    <tm class="tommydev">
+<style>
+  .layout-utama {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 100%;
+  }
+  .kolom-bagian {
+    flex: 1 1 100%; /* Di HP akan menyusun ke bawah 100% penuh */
+    min-width: 280px;
+  }
+  @media (min-width: 768px) {
+    .kolom-bagian {
+      flex: 1 1 calc(50% - 10px); /* Di layar besar akan berdampingan 50% 50% */
+    }
+  }
+  .grid-tombol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 0;
+    border: none;
+  }
+  .grid-penuh {
+    grid-column: span 2;
+  }
+  
+  .kolom-bagian p {
+  font-weight: normal !important;
+}
+</style>
+
+<div class="layout-utama">
+
+  <!-- ================= BAGIAN KIRI (Tools) ================= -->
+  <div class="kolom-bagian">
+    <div>
+      <i class="fas fa-tools"></i><b>&nbsp;Tools</b>
+    </div>
+    <p style="margin-bottom:0px;">Coba juga lainnya</p>
+    
+    <div class="content-container15" style="margin-bottom: 10px;">
+      <div id="defaultView15" style="display: block;"></div>
+      <div id="iframeView15" style="display: none;">
+        <tm class="tommydev" style="font-size:10px; padding:0px; margin:4px;">TOMMY WEB PROJECT ID2788</tm>
+        <iframe name="target-frame15" id="target-frame15" src="about:blank" style="width:100%; height:390px; border:none; border-radius:12px;"></iframe>
+      </div>
+    </div>
+
+    <!-- Tombol Tools Disatukan Rapi -->
+    <div class="menu-list15 grid-tombol">
+      <a href="javascript:void(0);" class="menu-item15 item-115" onclick="toggleIframe15('https://www.youtube.com/embed/Aj-tyu3qAVk', 'avatar')">
+        <div class="icon-box15"><i class="fa fa-play-circle"></i></div>
+        <div class="label-box15" style="font-size:13px;">Tutorial </div>
+      </a>
+      <a href="javascript:void(0);" class="menu-item15 item-315" onclick="toggleIframe15('https://tommydev27.github.io/cookie-token/', 'clone')">
+        <div class="icon-box15"><i class="fas fa-cookie-bite"></i></div>
+        <div class="label-box15" style="font-size:13px;">Cookie token</div>
+      </a>
+      <a href="javascript:void(0);" class="menu-item15 item-415" onclick="toggleIframe15('https://tommydev27.github.io/Storyes-27/', 'stories')">
+        <div class="icon-box15"><i class="fas fa-book"></i></div>
+        <div class="label-box15" style="font-size:13px;">Stori Teks</div>
+      </a>
+      <a href="javascript:void(0);" class="menu-item15 item-515" onclick="toggleIframe15('https://tommydev27.github.io/music-background/')">
+        <div class="icon-box15"><i class="fas fa-music"></i></div>
+        <div class="label-box15" style="font-size:13px;">Musik</div>
+      </a>
+      <a href="javascript:void(0);" class="menu-item15 item-615 grid-penuh" onclick="toggleIframe15('https://tommydev27.github.io/download-tiktok-background/')">
+        <div class="icon-box15"><i class="fab fa-tiktok"></i></div>
+        <div class="label-box15" style="font-size:13px;">Download video tanpa watermark</div>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ================= BAGIAN KANAN (ID Card) ================= -->
+  <div class="kolom-bagian">
+    <tm class="tommydev"><i class="far fa-address-card"></i><b> ID card editor </b></tm>
+    <p>Generator pembuat id tanda pengenal identitas</p>
+    
+    <div class="card-container" style="margin-top:10px;">
+      <div id="wrapper-frame" style="display:none; height:395px; border-radius:2vw; width:100%; margin:auto; margin-bottom: 10px;">
+        <iframe id="konten-frame" src="" style="width:100%; height:100%; border:none;"></iframe>
+      </div>
+
+      <!-- Tombol ID Card Disatukan Rapi -->
+      <div class="menu-container grid-tombol">
+        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Dasbor profesional')">
+          <div class="icon-circle" style="margin-right: 8px;">
+            <div class="icon-inner inner-orange"><i class="fas fa-id-card"></i></div>
+          </div>
+          <div class="card-header bg-orange"><span class="card-title" style="font-size:13px;">Id card pw</span></div>
+        </div>
+        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Pesan')">
+          <div class="icon-circle" style="margin-right: 8px;">
+            <div class="icon-inner inner-yellow"><i class="far fa-address-card"></i></div>
+          </div>
+          <div class="card-header bg-yellow"><span class="card-title" style="font-size:13px;">Sim</span></div>
+        </div>
+        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Pesan2')">
+          <div class="icon-circle" style="margin-right: 8px;">
+            <div class="icon-inner inner-green"><i class="fas fa-id-card"></i></div>
+          </div>
+          <div class="card-header bg-green"><span class="card-title" style="font-size:13px;">Id pw hindi</span></div>
+        </div>
+        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Pesan211')">
+          <div class="icon-circle" style="margin-right: 8px;">
+            <div class="icon-inner inner-green2"><i class="fas fa-id-card-alt"></i></div>
+          </div>
+          <div class="card-header bg-green2"><span class="card-title" style="font-size:13px;">Pasport</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Pindahan dari row277 (Variabel Teks) -->
+<tm class="tommydev"><i class="fab fa-google-plus"></i> <b>Generator Teks</b></tm>
+<p style="font-weight: normal !important;margin-bottom:10px;">Bagian alat generator pencarian unicode text icon dan logo lainnya</p>
+
+<div class="menu-grid" id="menuGrid">
+  <div class="menu-item" onclick="handleLinkBaru('Grup')">
+    <i class="fas fa-keyboard icon"></i><span class="label">Multi keyboard</span>
+  </div>
+    
+  <div class="menu-item" onclick="handleLinkBaru('Reels')">
+    <i class="fas fa-magic icon"></i><span class="label">Generator Text</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Marketplace')">
+    <i class="fas fa-font icon"></i>
+    <span class="label">Font Name Fb</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Halaman')">
+    <i class="fas fa-brush icon"></i>
+    <span class="label">Seni Font teks</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Tersimpan')">
+    <i class="fas fa-barcode icon"></i>
+    <span class="label">Glitch Text</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Acara')">
+    <i class="fas fa-clone icon"></i>
+    <span class="label">Blok 2 Catatan</span>
+  </div>
+        
+  <div class="menu-item" onclick="handleLinkBaru('Teman333')">
+    <i class="fas fa-hashtag icon"></i>
+    <span class="label">Unicode teks</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Teman3')">
+    <i class="fas fa-code icon"></i>
+    <span class="label">Code Runner</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Teman2')">
+    <i class="fas fa-calculator icon"></i>
+    <span class="label">Penghitung teks</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Teman1')">
+    <i class="fas fa-icons icon"></i>
+    <span class="label">Code Symbols</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Kenangan')">
+    <i class="fas fa-image icon"></i>
+    <span class="label">Image Art</span>
+  </div>
+
+  <div class="menu-item" onclick="handleLinkBaru('Ulang Birthday')">
+    <i class="fas fa-paint-roller icon"></i>
+    <span class="label">Generator IMG</span>
+  </div>
+</div>
+
+<script>
+function goToLink277(url){
+    window.location.href = url;
+}
+</script>
+
+<style>
+/* Reset total untuk membuang semua margin/padding bawaan */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-top: 20px;
+  color: #334155;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  
+  /* Menambahkan garis bawah */
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+body.dark-mode .project {
+  color: #00e2f0;
+  border-bottom-color: #444;
+}
+
+.menu-grid13 {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item13 {
+    margin-top:5px;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    cursor: pointer;
+    color:#334155;
+    min-height: 24px;
+}
+
+.icon13 {
+    margin-right: 8px;
+    width: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.label13 {
+    font-size: 16px;
+    line-height: 1;
+    font-weight:bold;
+}
+
+  /* Footer */
+  .footer-strip13 {
+    margin-top: auto;
+    height: 300px;
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius:0 0 50px 0;
+  }
+</style>
+
+<tm class="project"><b>Project UI</b></tm><hr>
+<div class="menu-grid13" id="menuGrid13">
+  <div class="menu-item13" onclick="handleLinkBaru('Teman')">
+    <div class="content-wrapper13"><i class="fas fa-play icon13"></i><span class="label13">Music player</span></div>
+  </div>
+  <div class="menu-item13" onclick="handleLinkBaru('Teman01')">
+    <div class="content-wrapper13"><i class="fas fa-chalkboard-teacher icon13"></i><span class="label13">Profile ui</span></div>
+  </div>
+  <div class="menu-item13" onclick="handleLinkBaru('Teman02')">
+    <div class="content-wrapper13"><i class="fas fa-home icon13"></i><span class="label13">Menu ui</span></div>
+  </div>
+  <div class="menu-item13" onclick="handleLinkBaru('Teman03')">
+    <div class="content-wrapper13"><i class="fas fa-code icon13"></i><span class="label13">CODE</span></div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+            <footer style="text-align:left; font-size:12px; padding:5vw 0; margin-top:5vw;">
+              <p><strong>Privacy Policy:</strong> No data collection. Tools run locally.</p>
+              <p><strong>Security:</strong> Scanned & Malware Free. Purely for account protection.</p>
+              <p><strong>Support:</strong> <a href="https://m.me/Gds27090?source=qr" style="color:#0199d1;">Tommy Website</a></p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+
+<script>
+// Matikan restorasi otomatis bawaan browser agar tidak bentrok
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+var currentActiveUrl15 = '';
+
+function simpanScroll() {
+    try { sessionStorage.setItem('scrollPosisi', String(window.scrollY)); } catch(e) {}
+}
+function pulihkanScroll() {
+    var p = sessionStorage.getItem('scrollPosisi');
+    if (p !== null) {
+        window.scrollTo(0, parseInt(p, 10) || 0);
+    }
+}
+
+// Simpan setiap kali halaman disembunyikan / ditinggalkan
+window.addEventListener('pagehide', simpanScroll);
+window.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') simpanScroll();
+});
+window.addEventListener('beforeunload', simpanScroll);
+
+// Pulihkan saat awal load DAN saat balik dari bfcache (mobile Chrome/Safari)
+window.addEventListener('DOMContentLoaded', pulihkanScroll);
+window.addEventListener('pageshow', function (e) {
+    // e.persisted === true berarti dipulihkan dari bfcache
+    pulihkanScroll();
+});
+
+function toggleIframe15(url, tipeMenu) {
+    var defaultView = document.getElementById('defaultView15');
+    var iframeView  = document.getElementById('iframeView15');
+    var frameWindow = window.frames['target-frame15'];
+
+    if (iframeView.style.display === 'block' && currentActiveUrl15 === url) {
+        iframeView.classList.remove('buka');
+        iframeView.classList.add('tutup');
+        setTimeout(function () {
+            frameWindow.location.replace('about:blank');
+            currentActiveUrl15 = '';
+            iframeView.style.display = 'none';
+            if (defaultView) defaultView.style.display = 'block';
+            iframeView.classList.remove('iframe-stories');
+        }, 400);
+    } else {
+        if (defaultView) defaultView.style.display = 'none';
+        if (tipeMenu === 'stories') iframeView.classList.add('iframe-stories');
+        else iframeView.classList.remove('iframe-stories');
+
+        iframeView.classList.remove('tutup');
+        iframeView.classList.add('buka');
+        iframeView.style.display = 'block';
+
+        iframeView.onanimationend = function (e) {
+            if (e.animationName === 'slideDown' || e.animationName === 'slideDownStories') {
+                iframeView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                iframeView.onanimationend = null;
+            }
+        };
+
+        if (currentActiveUrl15 !== url) {
+            frameWindow.location.replace(url);
+            currentActiveUrl15 = url;
+        }
+    }
+}
+
+function handleKlik(namaMenu) {
+    const daftarLink = {
+        "Dasbor profesional": "https://tommydev27.github.io/FakeID/",
+        "Pesan":    "https://tommydev27.github.io/Sim-card-pw/",
+        "Pesan2":   "https://tommydev27.github.io/id-card-pw-hindi/",
+        "Pesan211": "https://tommydev27.github.io/Pasport/"
+    };
+    const urlTujuan = daftarLink[namaMenu];
+    if (!urlTujuan) { alert("Maaf, link untuk " + namaMenu + " belum tersedia."); return; }
+
+    const wrapper = document.getElementById('wrapper-frame');
+    let iframe = document.getElementById('konten-frame');
+    var isOpen = wrapper.classList.contains('buka');
+
+    if (isOpen && iframe && iframe.getAttribute('data-url') === urlTujuan) {
+        wrapper.classList.remove('buka');
+        wrapper.classList.add('tutup');
+        setTimeout(function () {
+            wrapper.style.display = 'none';
+            if (iframe) iframe.remove();
+        }, 400);
+    } else {
+        if (iframe) iframe.remove();
+        iframe = document.createElement('iframe');
+        iframe.id = 'konten-frame';
+        iframe.setAttribute('data-url', urlTujuan);
+        iframe.src = urlTujuan;
+        wrapper.appendChild(iframe);
+        wrapper.style.display = 'block';
+        setTimeout(function () {
+            wrapper.classList.remove('tutup');
+            wrapper.classList.add('buka');
+        }, 10);
+        setTimeout(function () {
+            wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 410);
+    }
+}
+
+function handleLinkBaru(namaMenu) {
+    simpanScroll();
+    const daftarLink = {
+        "avatar": "https://tommydev27.github.io/tools-data-tm/",
+        "cookietoken": "https://tommydev27.github.io/cookie-token/",
+        "Grup": "https://tommydev27.github.io/Multi-Keyboartm/",
+        "Teman": "https://tommydev27.github.io/music-player/",
+        "Teman1": "https://tommydev27.github.io/unicode-char1/",
+        "Teman2": "https://tommydev27.github.io/penghitung-karakter/",
+        "Teman333": "https://tommydev27.github.io/unicode-explorerTM/",
+        "Teman01": "https://tommydev27.github.io/my-profile/",
+        "Teman02": "https://tommydev27.github.io/Project/",
+        "Teman03": "https://tommydev27.github.io/code.project/",
+        "Teman3": "https://tommydev27.github.io/code-runner/",
+        "Reels": "https://tommydev27.github.io/generatorascii/",
+        "Marketplace": "https://tommydev27.github.io/Font-Unikers-fB2/",
+        "Halaman": "https://tommydev27.github.io/tm-textGz/",
+        "Tersimpan": "https://tommydev27.github.io/glitch-text/",
+        "Kenangan": "https://tommydev27.github.io/Tm-generator-texs/",
+        "Ulang Tahun": "https://tommydev27.github.io/tommy.website3/",
+        "Acara": "https://tommydev27.github.io/Blok-dua-catatan-koreksi-catatan-/",
+        "Verifikasi Meta": "https://tommydev27.github.io/brt-foice/",
+        "Beranda": "https://www.facebook.com/",
+        "Instagram Lite": "https://www.instagram.com/"
+    };
+    const urlTujuan = daftarLink[namaMenu];
+    if (urlTujuan) window.open(urlTujuan, '_blank');
+    else alert("Maaf, link untuk " + namaMenu + " belum tersedia.");
+}
+
+
+
+function copyText(text, btn) {
+    navigator.clipboard.writeText(text);
+    const originalText = btn.innerText;
+    btn.innerText = 'OK';
+    setTimeout(() => { btn.innerText = originalText; }, 800);
+}
+
+const menuBtn  = document.getElementById("menuBtn");
+const sideMenu = document.getElementById("sideMenu");
+const overlay  = document.getElementById("overlay");
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("active");
+    overlay.classList.add("active");
+});
+overlay.addEventListener("click", () => {
+    sideMenu.classList.remove("active");
+    overlay.classList.remove("active");
+});
+</script>
+
+</body>
+</html>
