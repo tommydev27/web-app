@@ -367,7 +367,21 @@ body.dark-mode .icon-box15 {
 .nav-button:active, 
 .btn-salin:active, 
 #sideMenu a:active {
-  background-color: rgba(150, 228, 255, 0.5) !important;
+  background-color: rgba(150, 228, 255, 0.5) !important;color: #3b82f6;
+}
+
+/* Efek hover untuk semua ikon di dalam menu */
+.menu-item:hover .icon,
+.menu-item3:hover .icon-inner i,
+.menu-item15:hover .icon-box15 {
+  color: #3b82f6 !important;
+}
+
+/* Warna ikon saat di-hover khusus untuk Mode Gelap */
+body.dark-mode .menu-item:hover .icon,
+body.dark-mode .menu-item3:hover .icon-inner i,
+body.dark-mode .menu-item15:hover .icon-box15 {
+  color: #00e2f0 !important;
 }
 
 /* Warna saat tombol diklik (Mode Gelap) */
@@ -795,7 +809,7 @@ body.dark-mode .nav-button:active {
 
 <div class="header-wrapper">
   <span class="bold">
-    TOMMY WEB-APP
+    TOMMY WEBSITE
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
       alt="Verified Badge"
@@ -1318,130 +1332,115 @@ boot.addEventListener('click', hideBoot);
         <img src="https://i.postimg.cc/W4rS7b2Q/20260719-075825.jpg" style="width: 100%; border: none;  border-radius: 8px; pointer-events: none; margin-top: 10px; margin-bottom: 5px;
         box-shadow: 0px 2px 10px rgba(82,82,82,0.3); "></img>
     </div>
-<button type="button" class="nav-button" onclick="window.location.href=''">
+<button type="button" class="nav-button" onclick="window.location.href='https://tommydev27.github.io/change-name-avatar-guard/'">
     <span>Download ZIP</span>
 </button>
 </button>
     <tm class="tommydev">
-<style>
-  .layout-utama {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px;
-    width: 100%;
-  }
-  .kolom-bagian {
-    flex: 1 1 100%; /* Di HP akan menyusun ke bawah 100% penuh */
-    min-width: 280px;
-  }
-  @media (min-width: 768px) {
-    .kolom-bagian {
-      flex: 1 1 calc(50% - 10px); /* Di layar besar akan berdampingan 50% 50% */
-    }
-  }
-  .grid-tombol {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    padding: 0;
-    border: none;
-  }
-  .grid-penuh {
-    grid-column: span 2;
-  }
-  
-  .kolom-bagian p {
-  font-weight: normal !important;
-}
-</style>
-
-<div class="layout-utama">
-
-  <!-- ================= BAGIAN KIRI (Tools) ================= -->
-  <div class="kolom-bagian">
-    <div>
-      <i class="fas fa-tools"></i><b>&nbsp;Tools</b>
-    </div>
-    <p style="margin-bottom:0px;">Coba juga lainnya</p>
-    
-    <div class="content-container15" style="margin-bottom: 10px;">
-      <div id="defaultView15" style="display: block;"></div>
-      <div id="iframeView15" style="display: none;">
-        <tm class="tommydev" style="font-size:10px; padding:0px; margin:4px;">TOMMY WEB PROJECT ID2788</tm>
-        <iframe name="target-frame15" id="target-frame15" src="about:blank" style="width:100%; height:390px; border:none; border-radius:12px;"></iframe>
+      <i class="fas fa-tools"></i><b>&nbspTools</b>
       </div>
-    </div>
-
-    <!-- Tombol Tools Disatukan Rapi -->
-    <div class="menu-list15 grid-tombol">
-      <a href="javascript:void(0);" class="menu-item15 item-115" onclick="toggleIframe15('https://www.youtube.com/embed/Aj-tyu3qAVk', 'avatar')">
-        <div class="icon-box15"><i class="fa fa-play-circle"></i></div>
-        <div class="label-box15" style="font-size:13px;">Tutorial </div>
-      </a>
-      <a href="javascript:void(0);" class="menu-item15 item-315" onclick="toggleIframe15('https://tommydev27.github.io/cookie-token/', 'clone')">
-        <div class="icon-box15"><i class="fas fa-cookie-bite"></i></div>
-        <div class="label-box15" style="font-size:13px;">Cookie token</div>
-      </a>
-      <a href="javascript:void(0);" class="menu-item15 item-415" onclick="toggleIframe15('https://tommydev27.github.io/Storyes-27/', 'stories')">
-        <div class="icon-box15"><i class="fas fa-book"></i></div>
-        <div class="label-box15" style="font-size:13px;">Stori Teks</div>
-      </a>
-      <a href="javascript:void(0);" class="menu-item15 item-515" onclick="toggleIframe15('https://tommydev27.github.io/music-background/')">
-        <div class="icon-box15"><i class="fas fa-music"></i></div>
-        <div class="label-box15" style="font-size:13px;">Musik</div>
-      </a>
-      <a href="javascript:void(0);" class="menu-item15 item-615 grid-penuh" onclick="toggleIframe15('https://tommydev27.github.io/download-tiktok-background/')">
-        <div class="icon-box15"><i class="fab fa-tiktok"></i></div>
-        <div class="label-box15" style="font-size:13px;">Download video tanpa watermark</div>
-      </a>
-    </div>
-  </div>
-
-
-  <!-- ================= BAGIAN KANAN (ID Card) ================= -->
-  <div class="kolom-bagian">
-    <tm class="tommydev"><i class="far fa-address-card"></i><b> ID card editor </b></tm>
-    <p>Generator pembuat id tanda pengenal identitas</p>
-    
-    <div class="card-container" style="margin-top:10px;">
-      <div id="wrapper-frame" style="display:none; height:395px; border-radius:2vw; width:100%; margin:auto; margin-bottom: 10px;">
-        <iframe id="konten-frame" src="" style="width:100%; height:100%; border:none;"></iframe>
-      </div>
-
-      <!-- Tombol ID Card Disatukan Rapi -->
-      <div class="menu-container grid-tombol">
-        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Dasbor profesional')">
-          <div class="icon-circle" style="margin-right: 8px;">
-            <div class="icon-inner inner-orange"><i class="fas fa-id-card"></i></div>
-          </div>
-          <div class="card-header bg-orange"><span class="card-title" style="font-size:13px;">Id card pw</span></div>
-        </div>
-        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Pesan')">
-          <div class="icon-circle" style="margin-right: 8px;">
-            <div class="icon-inner inner-yellow"><i class="far fa-address-card"></i></div>
-          </div>
-          <div class="card-header bg-yellow"><span class="card-title" style="font-size:13px;">Sim</span></div>
-        </div>
-        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Pesan2')">
-          <div class="icon-circle" style="margin-right: 8px;">
-            <div class="icon-inner inner-green"><i class="fas fa-id-card"></i></div>
-          </div>
-          <div class="card-header bg-green"><span class="card-title" style="font-size:13px;">Id pw hindi</span></div>
-        </div>
-        <div class="menu-item3" style="padding: 8px;" onclick="handleKlik('Pesan211')">
-          <div class="icon-circle" style="margin-right: 8px;">
-            <div class="icon-inner inner-green2"><i class="fas fa-id-card-alt"></i></div>
-          </div>
-          <div class="card-header bg-green2"><span class="card-title" style="font-size:13px;">Pasport</span></div>
+          <p style="margin-bottom:0px;">Coba juga lainnya
+          </p>
+      <div class="content-container15">
+        <div id="defaultView15" style="display: block;"></div>
+        <div id="iframeView15" style="display: none;">
+          <tm class="tommydev" style="font-size:10px; padding:0px; margin:4px;">TOMMY WEB PROJECT ID2788</tm>
+          <iframe name="target-frame15" id="target-frame15" src="about:blank"></iframe>
         </div>
       </div>
-    </div>
-  </div>
+        <br>
 
-</div>
+        <div class="menu-list15">
+          <a href="javascript:void(0);" class="menu-item15 item-115" onclick="toggleIframe15('https://www.youtube.com/embed/Aj-tyu3qAVk', 'avatar')">
+            <div class="connector-line15"></div>
+            
+            <div class="icon-box15"><i class="fa fa-play-circle"></i></div>
+            <div class="label-box15">Tutorial Pasang zip extensions</div>
+          <a href="javascript:void(0);" class="menu-item15 item-315" onclick="toggleIframe15('https://tommydev27.github.io/cookie-token/', 'clone')">
+            <div class="connector-line15"></div>
+            <div class="icon-box15"><i class="fas fa-cookie-bite"></i></div>
+            <div class="label-box15">cookie token</div>
+          </a>
+          <a href="javascript:void(0);" class="menu-item15 item-415" onclick="toggleIframe15('https://tommydev27.github.io/Storyes-27/', 'stories')">
+            <div class="connector-line15"></div>
+            <div class="icon-box15"><i class="fas fa-book"></i></div>
+            <div class="label-box15">Stori Teks gambar</div>
+          </a>
+          <a href="javascript:void(0);" class="menu-item15 item-515" onclick="toggleIframe15('https://tommydev27.github.io/music-background/')">
+            <div class="connector-line15"></div>
+            <div class="icon-box15"><i class="fas fa-music"></i></div>
+            <div class="label-box15">Musik</div>
+          </a>
+          <a href="javascript:void(0);" class="menu-item15 item-615" onclick="toggleIframe15('https://tommydev27.github.io/download-tiktok-background/')">
+            <div class="connector-line15"></div>
+            <div class="icon-box15"><i class="fab fa-tiktok"></i></div>
+            <div class="label-box15">Download vidio tampa watermark</div>
+          </a>
+        </div>
+
+        <tm class="tommydev"><i class="far fa-address-card"></i><b> ID card editor </b></tm><p>Generator pembuat id tanda pengenal identitas banding</p><br>
+                  
+            <div class="card-container">
+              <div id="wrapper-frame" style="display:none; height:395px; border-radius:2vw; max-width:345px; width:100%; margin:auto;">
+                <iframe id="konten-frame" src=""></iframe>
+              </div>
+
+              <div class="menu-container">
+                <div class="menu-item3" onclick="handleKlik('Dasbor profesional')">
+                  <div class="icon-circle">
+                    <div class="icon-inner inner-orange">
+                      <i class="fas fa-id-card" aria-label="ID Card"></i>
+                    </div>
+                  </div>
+                  <div class="card-header bg-orange">
+                    <span class="card-title">Id card pw</span>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+                <div class="menu-item3" onclick="handleKlik('Pesan')">
+                  <div class="icon-circle">
+                    <div class="icon-inner inner-yellow">
+                      <i class="far fa-address-card" aria-label="Sim Card"></i>
+                    </div>
+                  </div>
+                  <div class="card-header bg-yellow">
+                    <span class="card-title">Sim</span>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+                <div class="menu-item3" onclick="handleKlik('Pesan2')">
+                  <div class="icon-circle">
+                    <div class="icon-inner inner-green">
+                      <i class="fas fa-id-card" aria-label="Sim Card"></i>
+                    </div>
+                  </div>
+                  <div class="card-header bg-green">
+                    <span class="card-title">Id card pw hindi</span>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+                
+                <div class="menu-item3" onclick="handleKlik('Pesan211')">
+                  <div class="icon-circle">
+                    <div class="icon-inner inner-green2">
+                      <i class="fas fa-id-card-alt" aria-label="Sim Card"></i>
+                    </div>
+                  </div>
+                  <div class="card-header bg-green2">
+                    <span class="card-title">Pasport</span>
+                  </div>
+                  <div class="card-body">
+                  </div>
+                </div>
+              </div>
+            </div>
+            
 <!-- Pindahan dari row277 (Variabel Teks) -->
 <tm class="tommydev"><i class="fab fa-google-plus"></i> <b>Generator Teks</b></tm>
-<p style="font-weight: normal !important;margin-bottom:10px;">Bagian alat generator pencarian unicode text icon dan logo lainnya</p>
+<p>Bagian alat generator pencarian unicode text icon dan logo lainnya</p></br>
 
 <div class="menu-grid" id="menuGrid">
   <div class="menu-item" onclick="handleLinkBaru('Grup')">
